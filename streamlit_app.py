@@ -5,25 +5,25 @@ st.set_page_config(page_title="Nimesh Wankhede | Data Science Portfolio", layout
 
 # Sidebar navigation
 st.sidebar.title("📂 Menu")
-page = st.sidebar.radio("Navigate", ["Home", "About", "Experience", "Projects", "Resume", "Contact"])
+page = st.sidebar.radio("Navigate", ["Home", "About", "Experience", "Projects", "Contact"])
 
 # ---- HOME ----
 if page == "Home":
     st.title("👋 Hi, I'm Nimesh Wankhede")
-    st.subheader("Data Scientist | AI/ML Developer | Software Testing with AI Agents")
+    st.subheader("Data Scientist | AI/ML Developer")
     st.markdown("""
     Welcome to my portfolio! I’m a Master’s graduate in Data Science from the University of the Pacific, 
-    passionate about building AI-driven systems for real-world impact—from machine learning pipelines and intelligent agents to full-stack web apps.
+    passionate about building AI driven systems for real world impact. I have hands-on experience machine learning pipelines, intelligent agents and full-stack web apps based on Python.
     """)
 
 # ---- ABOUT ----
 elif page == "About":
     st.header("📘 About Me")
     st.markdown("""
-    I specialize in data engineering, machine learning, and backend development. I’ve interned at **Zof AI**, where I created AI agents for automated software testing 
+    I specialize in data engineering, machine learning and backend development. I’ve interned at **Zof AI**, where I created AI agents for automated software testing 
     and log analysis, and at **V4U Technologies**, where I built marketing analytics solutions using predictive modeling and segmentation.
 
-    My work includes optimizing system reliability, parsing and classifying large-scale logs, and building full-stack solutions like `MealMind`, a geolocation-based food recommendation engine.
+    My work includes optimizing system reliability, parsing and classifying large-scale logs. I have also built full-stack solutions like **MealMind**, a geolocation-based food recommendation engine.
     
     I enjoy solving challenges at the intersection of **AI**, **data infrastructure**, and **automation**.
     """)
@@ -34,7 +34,7 @@ elif page == "Experience":
 
     st.subheader("ML Intern – Zof AI (May 2025 – Present)")
     st.write("""
-    - Created AI agents that autonomously generate, execute, and validate software test cases.
+    - Created AI agents that autonomously generate, execute and validate software test cases.
     - Integrated reinforcement learning and predictive modeling to enable agents to adapt strategies over time.
     - Parsed and analyzed 20K+ structured and unstructured log files using NLP techniques to identify system anomalies and optimize performance.
     """)
@@ -69,19 +69,6 @@ elif page == "Projects":
     st.subheader("✈️ Airline Passenger Satisfaction Model")
     st.write("""
     Constructed a predictive pipeline using SelectKBest and Random Forests, achieving 94% accuracy on 100K+ records. Used for customer experience analytics in airline services.
-    """)
-
-# ---- RESUME ----
-elif page == "Resume":
-    st.header("📄 Resume")
-    st.markdown("""
-    🔗 [Download my Resume (PDF)](https://drive.google.com/your-resume-link)
-
-    **Highlights:**
-    - ML Intern @ Zof AI: AI agents for software testing
-    - Data Analyst @ V4U: KPI dashboards, churn modeling
-    - Programmer @ Beyond Alliance: System automation
-    - Projects: CARLA simulation, MealMind API app, airline ML pipeline
     """)
 
 # ---- CONTACT ----
